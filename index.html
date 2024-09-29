@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header class="">
+       <div class="grid lg:grid-cols-2 lg:justify-items-center grid-cols-1 grid-rows-2 lg:h-[100vh] h-[100vh] z-0">
+        <div class="row-span-2 lg:col-start-1 lg:block w-full mt-10 lg:flex lg:items-center lg:justify-center">
+           <div class=" lg:w-[420px] lg:space-y-6 text-center lg:text-left space-y-4">
+                <h1 class="lg:text-5xl text-5xl">Next generation digital banking</h1>
+                <p class="lg:text-lg lg:pb-4 text-gray-600 pb-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Sapiente recusandae veritatis minus. Aliquid sapiente asperiores 
+                     cupiditate enim assumenda excepturi nihil.
+                </p>
+                <a href="#" class="bg-gradient-to-r from-green-500 to-cyan-400 px-4 md:px-6 rounded-full py-2 text-white">Request Invite</a>
+           </div>
+        </div>
+        <div class="row-start-1 lg:col-start-2 bg-[url('images/bg-intro-desktop.svg')]
+         bg-no-repeat lg:bg-left lg:bg-cover lg:h-[100vh] bg-cover bg-left w-full flex flex-col items-center relative">
+            <div class="bg-[url(images/image-mockups.png)] bg-cover bg-no-repeat lg:top-0  overflow-hidden lg lg:h-[600px] lg:w-[500px]
+             h-[400px] w-[400px] bg-top absolute bottom-0"></div>
+        </div>
+
+        <div class="absolute z-10 w-full h-full bg-main">
+            <div class="bg-white">
+                <nav class="bg-white lg:bg-white md:bg-black lg:w-[100%] md:w-[100%] sm:bg-red-400 py-4 flex lg:flex-row flex-col md:justify-between 
+            items-center justify-between lg:max-w-5xl lg:mx-auto px-4">
+                <div class="flex items-center justify-between w-full lg:w-auto">
+                    <img src="images/logo.svg" alt="">
+                    <ion-icon name="menu"  class="lg:hidden md:hidden  w-[60px] h-6" onclick="(menuBar(this))"></ion-icon>
+                </div>
+                <ul id="listNav" class="bg-white w-[90%] rounded-lg  flex-col  lg:flex-row lg:flex lg:items-center
+                 md:text-white md:flex md:space-x-6 lg:space-x-6 lg:text-gray-600 lg:block sm:hidden md:block text-center hidden lg:w-auto">
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">About</a></li>
+                 <li><a href="#">Contact</a></li>
+                 <li><a href="#">Blog</a></li>
+                 <li><a href="#">Careers</a></li>
+                </ul>
+                <a href="#" class="hidden lg:block md:block bg-gradient-to-r from-green-500 
+                to-cyan-400 px-4 md:px-6 rounded-full py-2 text-white">Request Invite</a>
+             </nav>
+            </div>
+        </div>
+       </div>
+    </header>
+
+    <section class="lg:h-[100vh] bg-zinc-50">
+        <div class="lg:max-w-5xl mx-auto flex flex-col lg:text-left text-center justify-center items-center h-full space-y-6 lg:p-0 p-6">
+            <div class="lg:text-left w-full space-y-6">
+                <h2 class="lg:text-4xl text-4xl">Why choose <br class="lg:hidden"> Easybank?</h2>
+                <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Corporis officia <br class="lg:block hidden"> similique doloribus voluptas eius illum.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 pt-6 ">
+                <div class="w-full h-full space-y-6 flex flex-col items-center lg:items-start">
+                    <img src="images/icon-online.svg"  alt="">
+                    <h3 class="text-2xl">Online Banking</h3>
+                    <p class="text-gray-600">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Perspiciatis iusto maxime deserunt ut. Nemo, id?
+                    </p>
+                </div>
+                <div class="w-full h-full space-y-6 flex flex-col items-center lg:items-start">
+                    <img src="images/icon-budgeting.svg" alt="">
+                    <h3 class="text-2xl">Simple Budgeting</h3>
+                    <p class="text-gray-600">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Perspiciatis iusto maxime deserunt ut. Nemo, id?
+                    </p>
+                </div>
+                <div class="w-full h-full space-y-6 flex flex-col items-center lg:items-start">
+                    <img src="images/icon-onboarding.svg" alt="">
+                    <h3 class="text-2xl">Fast Onboarding</h3>
+                    <p class="text-gray-600">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Perspiciatis iusto maxime deserunt ut. Nemo, id?
+                    </p>
+                </div>
+                <div class="w-full h-full space-y-6 flex flex-col items-center lg:items-start">
+                    <img src="images/icon-api.svg" alt="">
+                    <h3 class="text-2xl">Open Api</h3>
+                    <p class="text-wrap text-gray-600">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Perspiciatis iusto maxime deserunt ut. Nemo, id?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:h-[100vh]">
+        <div class="lg:max-w-5xl mx-auto lg:h-full">
+            <h2 class="lg:text-4xl pt-8">Latest Articles</h2>
+            <div class="grid lg:grid-cols-4 gap-4 justify-center items-center lg:h-[80%]">
+                <div class="shadow-md">
+                    <img src="images/image-restaurant.jpg" alt="">
+                    <div class="lg:p-4 space-y-2">
+                        <h4 class="lg:text-sm text-gray-400">By Paulo Calueto</h4>
+                        <h3 class="lg:text-xl">Treat yourself without worrying about money</h3>
+                        <p class=" text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Provident quas quod quam, mollitia tempora voluptates 
+                        </p>
+                    </div>
+                </div>
+                <div class="shadow-md">
+                    <img src="images/image-plane.jpg" alt="">
+                    <div class="lg:p-4 space-y-2">
+                        <h4 class="lg:text-sm text-gray-400">By Paulo Calueto</h4>
+                        <h3 class="lg:text-xl">Take your Easybank card wherever you go</h3>
+                        <p class=" text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Provident quas quod quam, mollitia tempora voluptates 
+                        </p>
+                    </div>
+                </div>
+                <div class="shadow-md">
+                    <img src="images/image-confetti.jpg" alt="">
+                    <div class="lg:p-4 space-y-2">
+                        <h4 class="lg:text-sm text-gray-400">By Paulo Calueto</h4>
+                        <h3 class="lg:text-xl">Our Invite-Only Beta accounts are now live</h3>
+                        <p class=" text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Provident quas quod quam, mollitia tempora voluptates 
+                        </p>
+                    </div>
+                </div>
+                <div class="shadow-md">
+                    <img src="images/image-currency.jpg" alt="">
+                    <div class="lg:p-4 space-y-2">
+                        <h4 class="lg:text-sm text-gray-400">By Paulo Calueto</h4>
+                        <h3 class="lg:text-xl">Receive Money in any currency with no fees</h3>
+                        <p class=" text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Provident quas quod quam, mollitia tempora voluptates 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-indigo-950">
+        <div class="flex items-center justify-between lg:max-w-5xl mx-auto">
+            <div class="flex items-center space-x-20 p-4 text-gray-400">
+                <div class="space-y-4">
+                    <img src="images/logo.svg" alt="Easybank Logo">
+                    <br>
+                    <ul class="flex space-x-4">
+                        <li><img src="images/icon-facebook.svg" class="text-white" alt=""></li>
+                        <li><img src="images/icon-instagram.svg" alt=""></li>
+                        <li><img src="images/icon-pinterest.svg" alt=""></li>
+                        <li><img src="images/icon-twitter.svg" alt=""></li>
+                        <li><img src="images/icon-youtube.svg" alt=""></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-gray-400">
+                <a href="#" class="hidden lg:block md:block bg-gradient-to-r from-green-500 
+                to-cyan-400 px-4 md:px-6 rounded-full py-2 text-center text-white">Request Invite</a>
+                <br>
+                <span class="">
+                    Easybank. All rights Reserved
+                </span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
